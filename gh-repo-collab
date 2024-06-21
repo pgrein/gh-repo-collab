@@ -98,8 +98,6 @@ add() {
       echo "error looking up user or team: $user"
       return 1
     fi
-    echo
-    return 1
   fi
 
   if [[ $user == */* ]]; then
