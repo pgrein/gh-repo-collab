@@ -98,9 +98,8 @@ add() {
       echo "error looking up user or team: $user"
       return 1
     fi
-    read -r -n 1 -p "Add $display to the $repo repository? (y/N) "
     echo
-    [ "$REPLY" = "y" ] || return 1
+    return 1
   fi
 
   if [[ $user == */* ]]; then
